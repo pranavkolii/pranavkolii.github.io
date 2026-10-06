@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pranav J. Koli | Robotics Engineer</title>
+    <style>
+        :root {
+            --bg-color: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent-color: #38bdf8;
+            --accent-hover: #0284c7;
+            --border-color: #334155;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        header {
+            padding: 40px 0 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            color: var(--text-main);
+            margin-bottom: 8px;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        .bio {
+            color: var(--text-muted);
+            margin-bottom: 20px;
+            max-width: 800px;
+        }
+
+        .links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .links a {
+            color: var(--text-main);
+            background: var(--card-bg);
+            padding: 8px 16px;
+            border-radius: 6px;
+            text-decoration: none;
+            border: 1px solid var(--border-color);
+            transition: all 0.2s ease;
+            font-size: 0.9rem;
+        }
+
+        .links a:hover {
+            border-color: var(--accent-color);
+            color: var(--accent-color);
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        h2 {
+            font-size: 1.6rem;
+            margin-bottom: 20px;
+            border-bottom: 2px solid var(--accent-color);
+            display: inline-block;
+            padding-bottom: 4px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 15px;
+        }
+
+        .skill-card {
+            background: var(--card-bg);
+            padding: 15px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+        }
+
+        .skill-card h3 {
+            font-size: 1rem;
+            color: var(--accent-color);
+            margin-bottom: 8px;
+        }
+
+        .skill-card p {
+            font-size: 0.88rem;
+            color: var(--text-muted);
+        }
+
+        .timeline-item, .project-card {
+            background: var(--card-bg);
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border-color);
+            margin-bottom: 20px;
+        }
+
+        .item-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 8px;
+            flex-wrap: wrap;
+        }
+
+        .item-title {
+            font-size: 1.1rem;
+            font-weight: bold;
+            color: var(--text-main);
+        }
+
+        .item-date {
+            font-size: 0.85rem;
+            color: var(--accent-color);
+        }
+
+        .item-sub {
+            font-size: 0.95rem;
+            color: var(--text-muted);
+            margin-bottom: 12px;
+        }
+
+        ul {
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 0.92rem;
+        }
+
+        li {
+            margin-bottom: 6px;
+        }
+
+        .project-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .tags {
+            margin-top: 10px;
+            display: flex;
+            gap: 8px;
+            flex-wrap: wrap;
+        }
+
+        .tag {
+            background: #0f172a;
+            color: var(--accent-color);
+            font-size: 0.75rem;
+            padding: 3px 8px;
+            border-radius: 4px;
+            border: 1px solid var(--border-color);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            border-top: 1px solid var(--border-color);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Pranav J. Koli</h1>
+            <div class="subtitle">ME in Robotics Engineering | University of Maryland, College Park</div>
+            <p class="bio">
+                Specializing in autonomous motion planning, control algorithms (MPC, LQR, LQG), mechatronics, and 3D perception. Experienced in ROS1/ROS2, Isaac Sim, Gazebo, and CARLA simulation.
+            </p>
+            <div class="links">
+                <a href="mailto:kolipranav20@gmail.com">Email</a>
+                <a href="https://linkedin.com/in/pranavkoliii" target="_blank">LinkedIn</a>
+                <a href="https://github.com" target="_blank">GitHub</a>
+                <a href="Resume_PranavK.pdf" target="_blank">Download Resume (PDF)</a>
+            </div>
+        </header>
+
+        <section id="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Robotics & Control</h3>
+                    <p>ROS1/ROS2, MoveIt, MPC, LQR, LQG, SLAM, EtherCAT, CANopen</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Simulation & Perception</h3>
+                    <p>Gazebo, Isaac Sim, CARLA, MuJoCo, PyBullet, RViz, Duality AI (Falcon), OpenCV, PyTorch, CUDA</p>
+                </div>
+                <div class="skill-card">
+                    <h3>Programming</h3>
+                    <p>C/C++, Python, MATLAB, G&M Code, LaTeX, Linux, Docker, Git</p>
+                </div>
+                <div class="skill-card">
+                    <h3>3D CAD & Hardware</h3>
+                    <p>SolidWorks (CSWA), AutoCAD, Inventor, Fusion 360, ANSYS Workbench, Blender, Eagle, Slicer 3D</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2>Work Experience</h2>
+
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-title">Inception Robotics LLC</div>
+                    <div class="item-date">Jun 2026 – Aug 2026</div>
+                </div>
+                <div class="item-sub">Robotics Intern | College Park, MD</div>
+                <ul>
+                    <li>Evaluated mechatronic designs for the MedSort robotic device including controllers, actuators, motors, and sensors.</li>
+                    <li>Tested motor drives using EtherCAT and CANopen industrial communication protocols.</li>
+                    <li>Evaluated trajectory generation algorithms, trained vision models on CUDA, and conducted Isaac Sim simulations.</li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <div class="item-header">
+                    <div class="item-title">Apex Precision Mechatronix Pvt. Ltd.</div>
+                    <div class="item-date">Aug 2024 – Jul 2025</div>
+                </div>
+                <div class="item-sub">Design Engineer | Mumbai, India</div>
+                <ul>
+                    <li>Designed linear motion control and industrial automation systems (linear rails, actuators, ball screws, belt drives).</li>
+                    <li>Assisted in component selection and optimizing customer product design requirements.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+
+                <div class="project-card">
+                    <div class="item-title">Frenet Frame Lattice Planner</div>
+                    <div class="item-sub">CARLA Simulation & Motion Planning</div>
+                    <p>Engineered an end-to-end autonomous driving motion planning stack in CARLA with Frenet coordinate transformations, candidate trajectory generation, safety filtering, and PID/Pure Pursuit control.</p>
+                    <div class="tags">
+                        <span class="tag">CARLA</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Motion Planning</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="item-title">Adaptable Surface Painting Robot</div>
+                    <div class="item-sub">ROS2 & UR5 6-DoF Arm</div>
+                    <p>Architected a surface-reconstruction painting pipeline using PCA to extract normal vectors for high-precision tool orientation and numerical Jacobian pseudo-inverse for IK solving.</p>
+                    <div class="tags">
+                        <span class="tag">ROS2</span>
+                        <span class="tag">C++</span>
+                        <span class="tag">PCA</span>
+                        <span class="tag">UR5</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="item-title">Pick-and-Place Manipulation Stack</div>
+                    <div class="item-sub">Franka Emika Panda Robot</div>
+                    <p>Developed ROS/MoveIt motion planning pipeline with end-effector grasp controllers, incorporating 3D scene perception to prevent collisions during dynamic pick-and-place tasks.</p>
+                    <div class="tags">
+                        <span class="tag">ROS</span>
+                        <span class="tag">MoveIt</span>
+                        <span class="tag">3D Perception</span>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="item-title">Autonomous SUV with Multi-Trailers</div>
+                    <div class="item-sub">SolidWorks URDF & Simulation</div>
+                    <p>Exported multi-link SolidWorks assembly to URDF, building closed-loop PID control and LiDAR obstacle detection in ROS2/Gazebo and FalconSim.</p>
+                    <div class="tags">
+                        <span class="tag">SolidWorks</span>
+                        <span class="tag">URDF</span>
+                        <span class="tag">ROS2</span>
+                        <span class="tag">Gazebo</span>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 Pranav J. Koli. Built with GitHub Pages.</p>
+        </footer>
+    </div>
+
+</body>
+</html>
