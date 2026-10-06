@@ -7,14 +7,14 @@
     <style>
         :root {
             /* Qatar Airways Inspired Color Palette */
-            --bg-color: #0b0d17;          /* Deep rich background */
-            --card-bg: #16192b;           /* Dark slate card container */
-            --text-main: #f8fafc;         /* Clean white text */
-            --text-muted: #94a3b8;        /* Slate silver text */
-            --qatar-burgundy: #5C0632;    /* Primary Burgundy Accent */
-            --qatar-burgundy-hover: #7A0842; /* Lighter Burgundy for Hover */
-            --qatar-gold: #D4AF37;        /* Secondary Luxury Gold Accent */
-            --border-color: #272c47;      /* Subtle border contrast */
+            --bg-color: #0b0d17;          
+            --card-bg: #16192b;           
+            --text-main: #f8fafc;         
+            --text-muted: #94a3b8;        
+            --qatar-burgundy: #5C0632;    
+            --qatar-burgundy-hover: #7A0842; 
+            --qatar-gold: #D4AF37;        
+            --border-color: #272c47;      
         }
 
         * {
@@ -209,9 +209,10 @@
             border-color: var(--qatar-burgundy);
         }
 
-        .project-img {
+        /* MEDIA CONTAINERS (IMAGE OR VIDEO) */
+        .project-media {
             width: 100%;
-            height: 180px;
+            height: 200px;
             object-fit: cover;
             border-bottom: 1px solid var(--border-color);
             background-color: #05060b;
@@ -331,14 +332,17 @@
             </div>
         </section>
 
-        <!-- PROJECTS SECTION -->
+        <!-- FEATURED PROJECTS (IMAGES & VIDEOS) -->
         <section id="projects">
             <h2>Featured Projects</h2>
             <div class="project-grid">
 
-                <!-- Project 1 -->
+                <!-- PROJECT 1: VIDEO DEMO -->
                 <div class="project-card">
-                    <img src="projects/frenet_planner.gif" alt="Frenet Lattice Planner" class="project-img" onerror="this.src='https://via.placeholder.com/400x180/16192b/5C0632?text=CARLA+Frenet+Lattice+Planner'">
+                    <video class="project-media" autoplay loop muted playsinline poster="projects/frenet_thumb.jpg">
+                        <source src="projects/frenet_planner.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                     <div class="project-body">
                         <div class="item-title">Frenet Frame Lattice Planner</div>
                         <div class="item-sub">CARLA Simulator & Motion Planning</div>
@@ -352,9 +356,12 @@
                     </div>
                 </div>
 
-                <!-- Project 2 -->
+                <!-- PROJECT 2: VIDEO DEMO -->
                 <div class="project-card">
-                    <img src="projects/painting_robot.jpg" alt="Surface Painting Robot" class="project-img" onerror="this.src='https://via.placeholder.com/400x180/16192b/5C0632?text=UR5+Surface+Painting+Robot'">
+                    <video class="project-media" autoplay loop muted playsinline poster="projects/painting_thumb.jpg">
+                        <source src="projects/painting_robot.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
                     <div class="project-body">
                         <div class="item-title">Adaptable Real-Time Painting Robot</div>
                         <div class="item-sub">ROS2 & UR5 6-DoF Arm</div>
@@ -369,9 +376,9 @@
                     </div>
                 </div>
 
-                <!-- Project 3 -->
+                <!-- PROJECT 3: IMAGE DEMO -->
                 <div class="project-card">
-                    <img src="projects/panda_pick_place.jpg" alt="Pick and Place Franka Panda" class="project-img" onerror="this.src='https://via.placeholder.com/400x180/16192b/5C0632?text=Franka+Panda+Pick+%26+Place'">
+                    <img src="projects/panda_pick_place.jpg" alt="Pick and Place Franka Panda" class="project-media" onerror="this.src='https://via.placeholder.com/400x200/16192b/5C0632?text=Franka+Panda+Pick+%26+Place'">
                     <div class="project-body">
                         <div class="item-title">Pick-and-Place Manipulation Stack</div>
                         <div class="item-sub">Franka Emika Panda Robot</div>
@@ -385,9 +392,9 @@
                     </div>
                 </div>
 
-                <!-- Project 4 -->
+                <!-- PROJECT 4: IMAGE DEMO -->
                 <div class="project-card">
-                    <img src="projects/multi_trailer_suv.jpg" alt="Multi-Trailer SUV" class="project-img" onerror="this.src='https://via.placeholder.com/400x180/16192b/5C0632?text=Multi-Trailer+SUV+Gazebo'">
+                    <img src="projects/multi_trailer_suv.jpg" alt="Multi-Trailer SUV" class="project-media" onerror="this.src='https://via.placeholder.com/400x200/16192b/5C0632?text=Multi-Trailer+SUV+Gazebo'">
                     <div class="project-body">
                         <div class="item-title">Autonomous Multi-Trailer SUV</div>
                         <div class="item-sub">SolidWorks URDF & FalconSim</div>
